@@ -14,7 +14,7 @@ void runProducedCar();
 void testProducedCar();
 void delay(int ms);
 
-enum QuesionType
+enum QuestionType
 {
     CarType_Q,
     Engine_Q,
@@ -277,9 +277,9 @@ void selectSteeringSystem(int answer)
 {
     stack[SteeringSystem_Q] = answer;
     if (answer == 1)
-        printf("BOSCH 제동장치를 선택하셨습니다.\n");
+        printf("BOSCH 조향장치를 선택하셨습니다.\n");
     if (answer == 2)
-        printf("MOBIS 제동장치를 선택하셨습니다.\n");
+        printf("MOBIS 조향장치를 선택하셨습니다.\n");
 }
 
 int isValidCheck()
@@ -379,10 +379,7 @@ void testProducedCar()
     else if (stack[brakeSystem_Q] == BOSCH_B && stack[SteeringSystem_Q] != BOSCH_S)
     {
         printf("자동차 부품 조합 테스트 결과 : FAIL\n");
-        if (stack[SteeringSystem_Q] == MOBIS)
-        {
-            printf("Bosch엔진에는 Mobis제동장치 사용 불가\n");
-        }
+        printf("Bosch제동장치에는 Bosch조향장치 이외 사용 불가\n");
     }
     else
     {
