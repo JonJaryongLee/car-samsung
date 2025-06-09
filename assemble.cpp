@@ -304,10 +304,6 @@ int isValidCheck()
     {
         return false;
     }
-    else if (stack[brakeSystem_Q] != BOSCH_B && stack[SteeringSystem_Q] == BOSCH_S)
-    {
-        return false;
-    }
     else
     {
         return true;
