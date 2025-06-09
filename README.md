@@ -104,7 +104,7 @@ int main()
 
 두 개의 매크로를 전환하려면 아래 그림과 같이 전환합니다.  
 
-![image1](./imgs/image1)  
+![image1](./imgs/image1.jpg)  
 
 Debug / Release 선택시마다 실행되지 않는 코드 영역이 회색처리되는것을 보실 수 있습니다.  
 
